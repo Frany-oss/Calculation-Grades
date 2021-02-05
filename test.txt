@@ -1,0 +1,10 @@
+
+- Add class
+    - class
+        -  add grades
+        - calculate average (with grades)
+
+- semester's average
+    - average of the classes
+
+
