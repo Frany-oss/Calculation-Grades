@@ -1,8 +1,9 @@
 
 class Class:
 
-    def __init__(self):
+    def __init__(self, credits = 0):
         self.grades = []
+        self.credits = credits
 
 
     def CalculateGrades(self, grade, weight):
@@ -13,5 +14,9 @@ class Class:
         temp = 0
         for i in range(len(grades)):
             temp += grades[i]
-
+        
         return temp
+
+    def ToCalculateFinalGrade(self, grades):
+        grade = CalculateAverage(grades)
+        return self.credits * grade
